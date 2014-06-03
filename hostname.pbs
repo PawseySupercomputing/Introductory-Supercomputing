@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -W group_list=courses01
+#PBS -l walltime=00:05:00
+#PBS -q courseq
+#PBS -l select=2:ncpus=2:mpiprocs=2:mem=23GB
+#PBS -l place=free:excl
+
+printenv
+mpirun /bin/hostname
+
