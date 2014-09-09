@@ -5,6 +5,9 @@
 #PBS -l select=2:ncpus=2:mpiprocs=2:mem=23GB
 #PBS -l place=free:excl
 
-printenv
+echo "/bin/hostname"
+/bin/hostname
+
+echo "mpirun /bin/hostname"
 mpirun /bin/hostname
 
