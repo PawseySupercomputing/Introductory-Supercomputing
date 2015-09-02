@@ -8,6 +8,6 @@
 echo "/bin/hostname"
 /bin/hostname
 
-echo "aprun -n -N 24 /bin/hostname"
-aprun -n 48 -N 24 /bin/hostname
+echo "aprun -n -N 8 /bin/hostname"
+aprun -n 16 -N 8 /bin/hostname
 
