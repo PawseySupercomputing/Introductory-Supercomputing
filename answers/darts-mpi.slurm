@@ -5,5 +5,5 @@
 #SBATCH --time=00:05:00
 #SBATCH --export=NONE
 
-aprun -n 24 -N 24 darts-mpi.x
+aprun -n 8 -N 8 darts-mpi.x
 
