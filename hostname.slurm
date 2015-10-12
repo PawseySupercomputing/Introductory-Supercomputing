@@ -1,6 +1,7 @@
 #!/bin/bash -l
 #SBATCH --job-name=hostname
 #SBATCH --account=courses01
+#SBATCH --reservation=courseq
 #SBATCH --nodes=2
 #SBATCH --time=00:05:00
 #SBATCH --export=NONE
