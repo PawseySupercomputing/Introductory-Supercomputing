@@ -15,7 +15,7 @@
 ! Now, we compute pi
         program darts
           implicit none
-          integer*8 :: num_trials = 1000000, i = 0, Ncirc = 0
+          integer*8 :: num_trials = 100000000, i = 0, Ncirc = 0
           real :: pi = 0.0, x = 0.0, y = 0.0, r = 1.0
           real :: r2 = 0.0
           real :: lcgrandom

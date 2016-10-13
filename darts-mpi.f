@@ -17,7 +17,7 @@
         program darts
           implicit none
           include 'mpif.h'
-          integer :: num_trials = 1000000, i = 0, Ncirc = 0
+          integer :: num_trials = 100000000, i = 0, Ncirc = 0
 !          integer :: num_trials = 100, i = 0, Ncirc = 0
           real :: pi = 0.0, x = 0.0, y = 0.0, r = 1.0
           real :: r2 = 0.0
