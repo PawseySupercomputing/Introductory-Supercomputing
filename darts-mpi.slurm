@@ -7,14 +7,14 @@
 #SBATCH --export=NONE
 
 echo "Running darts-mpi.x with 2 MPI-tasks"
-time -p aprun -n 2 ./darts-mpi.x
+/usr/bin/time -f "Elapsed time = %E" aprun -n 2 ./darts-mpi.x
 
 echo "Running darts-mpi.x with 4 MPI-tasks"
-time -p aprun -n 4 ./darts-mpi.x
+/usr/bin/time -f "Elapsed time = %E" aprun -n 4 ./darts-mpi.x
 
 echo "Running darts-mpi.x with 8 MPI-tasks"
-time -p aprun -n 8 ./darts-mpi.x
+/usr/bin/time -f "Elapsed time = %E" aprun -n 8 ./darts-mpi.x
 
 echo "Running darts-mpi.x with 16 MPI-tasks"
-time -p aprun -n 16 ./darts-mpi.x
+/usr/bin/time -f "Elapsed time = %E" aprun -n 16 ./darts-mpi.x
 
