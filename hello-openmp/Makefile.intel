@@ -1,0 +1,12 @@
+CC=icc
+CFLAGS=-O2 -qopenmp
+
+hello-openmp-intel: hello-openmp.c
+	$(CC) -o $@ $< $(CFLAGS)
+
+.PHONY: clean
+
+clean:
+	rm hello-openmp-intel
+
+
