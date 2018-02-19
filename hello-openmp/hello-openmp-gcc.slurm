@@ -1,5 +1,6 @@
 #!/bin/bash -l
 #SBATCH --job-name=hello-openmp
+#SBATCH --reservation=courseq
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=28

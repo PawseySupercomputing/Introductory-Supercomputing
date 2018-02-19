@@ -1,5 +1,6 @@
 #!/bin/bash -l
 #SBATCH --job-name=hello-serial
+#SBATCH --reservation=courseq
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1

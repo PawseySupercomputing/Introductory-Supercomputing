@@ -1,5 +1,6 @@
 #!/bin/bash -l
 #SBATCH --job-name=hello-mpi
+#SBATCH --reservation=courseq
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=28
 #SBATCH --cpus-per-task=1
