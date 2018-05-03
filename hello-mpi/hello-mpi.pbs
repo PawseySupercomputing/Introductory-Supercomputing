@@ -1,0 +1,13 @@
+#!/bin/bash -l
+#PBS -q express
+#PBS -l walltime=00:05:00
+#PBS -l ncpus=16
+#PBS -l mem=1GB
+#PBS -l jobfs=1GB
+#PBS -l wd
+
+# prepare MPI environment
+module load openmpi
+
+# launch MPI program
+mpirun ./hello-mpi

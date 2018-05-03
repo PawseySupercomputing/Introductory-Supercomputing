@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -q express
+#PBS -l walltime=00:05:00
+#PBS -l ncpus=16
+#PBS -l mem=1GB
+#PBS -l jobfs=1GB
+#PBS -l wd 
+
+# set OpenMP environment variables
+export OMP_NUM_THREADS=16
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+
+# launch OpenMP program
+./hello-openmp-gcc
