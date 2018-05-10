@@ -11,5 +11,5 @@
 module load python/3.6.3
 
 # launch serial python script
-srun --export=all -n 1 python3 hello-serial.py
+python3 hello-serial.py
 
